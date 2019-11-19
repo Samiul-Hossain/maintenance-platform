@@ -14,4 +14,9 @@ body {
 
 .carousel-caption {
 	color: black;
+	top: 0;
+    bottom: auto;
+    
+    padding-right: 50%
 }
+
