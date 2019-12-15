@@ -185,3 +185,94 @@ p{
 
 }
 
+
+
+/*! CSS Used from: http://that-quick.com/vendor/bootstrap/css/bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+h2{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+img{vertical-align:middle;border-style:none;}
+h2{margin-bottom:.5rem;font-weight:500;line-height:1.2;}
+h2{font-size:2rem;}
+.img-fluid{max-width:100%;height:auto;}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-lg-12,.col-lg-6{position:relative;width:100%;padding-right:15px;padding-left:15px;}
+@media (min-width:992px){
+.col-lg-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+}
+.bg-dark{background-color:#343a40!important;}
+.overflow-hidden{overflow:hidden!important;}
+.mb-2{margin-bottom:.5rem!important;}
+.mt-4{margin-top:1.5rem!important;}
+.font-weight-bold{font-weight:700!important;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+img{page-break-inside:avoid;}
+h2,p{orphans:3;widows:3;}
+h2{page-break-after:avoid;}
+}
+/*! CSS Used from: http://that-quick.com/vendor/fontawesome-free/css/all.min.css */
+.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-plus:before{content:"\f067";}
+.fas{font-family:"Font Awesome 5 Free";}
+.fas{font-weight:900;}
+/*! CSS Used from: http://that-quick.com/vendor/animate/animate.min.css */
+.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn;}
+.animated{-webkit-animation-duration:1s;-webkit-animation-fill-mode:both;animation-duration:1s;animation-fill-mode:both;}
+@media (prefers-reduced-motion){
+.animated{-webkit-animation:unset!important;-webkit-transition:none!important;animation:unset!important;transition:none!important;}
+}
+/*! CSS Used from: http://that-quick.com/css/theme.css */
+.text-5{font-size:1.50em!important;}
+.opacity-8{opacity:0.8!important;}
+.overflow-hidden{overflow:hidden!important;}
+.font-weight-bold{font-weight:700!important;}
+/*! CSS Used from: http://that-quick.com/css/theme-elements.min.css */
+.appear-animation{opacity:0;}
+.appear-animation-visible{opacity:1;}
+.maskUp{-webkit-animation-name:maskUp;animation-name:maskUp;}
+.fadeInUpShorter{-webkit-animation-name:fadeInUpShorter;animation-name:fadeInUpShorter;}
+h2{color:#212529;font-weight:200;letter-spacing:-.05em;margin:0;-webkit-font-smoothing:antialiased;}
+h2{font-size:2.2em;font-weight:300;line-height:42px;margin:0 0 32px 0;}
+@media (max-width:575px){
+h2{line-height:40px;}
+}
+.border-radius-0{border-radius:0!important;}
+.sort-destination .isotope-item{min-width:1px;}
+@media (max-width:767px){
+.isotope-item{position:static!important;text-align:center;width:100%;margin-left:auto;margin-right:auto;-webkit-transform:none!important;transform:none!important;}
+}
+.thumb-info{display:block;position:relative;text-decoration:none;max-width:100%;background-color:#fff;border-radius:4px;overflow:hidden;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
+.thumb-info .thumb-info-wrapper{-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);border-radius:4px;margin:0;overflow:hidden;display:block;position:relative;}
+.thumb-info .thumb-info-wrapper:after{content:"";background:rgba(33,37,41,.8);-webkit-transition:all .3s;transition:all .3s;border-radius:4px;bottom:-4px;color:#fff;left:-4px;position:absolute;right:-4px;top:-4px;display:block;opacity:0;z-index:1;}
+.thumb-info .thumb-info-action-icon{-webkit-transition:all .3s;transition:all .3s;background:#ccc;border-radius:0 0 0 4px;display:inline-block;font-size:25px;height:50px;line-height:50px;position:absolute;right:-100px;text-align:center;top:-100px;width:50px;z-index:2;}
+.thumb-info .thumb-info-action-icon i{font-size:14px;right:50%;position:absolute;top:50%;color:#fff;-webkit-transform:translate(50%,-50%);transform:translate(50%,-50%);margin:-2px -1px 0 0;}
+.thumb-info img{-webkit-transition:all .3s ease;transition:all .3s ease;border-radius:3px;position:relative;width:100%;}
+.thumb-info:hover .thumb-info-wrapper:after{opacity:1;}
+.thumb-info:hover .thumb-info-action-icon{right:0;top:0;}
+.thumb-info:hover img{-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);}
+.thumb-info.thumb-info-no-zoom img{-webkit-transition:none;transition:none;}
+.thumb-info.thumb-info-no-zoom:hover img{-webkit-transform:scale(1,1);transform:scale(1,1);}
+.thumb-info.thumb-info-lighten .thumb-info-wrapper:after{background:rgba(23,23,23,.25);}
+p{color:#777;line-height:26px;margin:0 0 20px;}
+.portfolio-list .portfolio-item{position:relative;margin-bottom:35px;}
+/*! CSS Used from: http://that-quick.com/vendor/rs-plugin/css/layers.css */
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+/*! CSS Used from: http://that-quick.com/css/skins/default.css */
+html .text-color-dark{color:#212529!important;}
+html .bg-dark{background-color:#212529!important;}
+.thumb-info .thumb-info-action-icon{background-color:#fbb62f;}
+/*! CSS Used keyframes */
+@-webkit-keyframes fadeIn{0%{opacity:0;}to{opacity:1;}}
+@keyframes fadeIn{0%{opacity:0;}to{opacity:1;}}
+@-webkit-keyframes maskUp{from{-webkit-transform:translate(0,100%);transform:translate(0,100%);}to{-webkit-transform:translate(0,0);transform:translate(0,0);}}
+@keyframes maskUp{from{-webkit-transform:translate(0,100%);transform:translate(0,100%);}to{-webkit-transform:translate(0,0);transform:translate(0,0);}}
+@-webkit-keyframes fadeInUpShorter{from{opacity:0;-webkit-transform:translate(0,50px);transform:translate(0,50px);}to{opacity:1;-webkit-transform:none;transform:none;}}
+@keyframes fadeInUpShorter{from{opacity:0;-webkit-transform:translate(0,50px);transform:translate(0,50px);}to{opacity:1;-webkit-transform:none;transform:none;}}
+
+.col-lg-12.isotope-item.mt-4.brands{
+    position:relative;
+    max-width: 1000px; 
+    margin: auto;
+}
