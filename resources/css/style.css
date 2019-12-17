@@ -43,6 +43,7 @@ h2,
 h3{
     font-weight: 300;
     text-transform: uppercase;
+
     
 }
 
@@ -65,6 +66,7 @@ h2{
 h3{
     font-size: 110%;
     margin-bottom: 15px;
+    
 }
 
 h2:after{
@@ -242,7 +244,6 @@ header {
 .mm{
     margin-bottom: 30px;
 }
-
 
 
 

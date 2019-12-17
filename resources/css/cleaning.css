@@ -58,7 +58,7 @@
 .testimonial .title{
     font-size: 15px;
     font-weight: bold;
-    color: #fff;
+    color: #EFC097;
     text-transform: capitalize;
     margin: 0 0 5px 0;
 }
@@ -127,3 +127,16 @@
         bottom: 13%;
     }
 
+.demo {
+    margin: top;
+}
+
+.reviews{
+    text-align: center;
+    
+}
+
+.demo img{
+    max-width: 30px;
+    max-height: 30px;
+}
