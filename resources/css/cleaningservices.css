@@ -133,10 +133,10 @@ a,a:focus,a:hover{color:#ccc;}
 
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 
-a{color:#fbb62f;}
-a:hover{color:#fbbf48;}
-a:focus{color:#fbbf48;}
-a:active{color:#fbad16;}
+a{color:#27AE60;}
+a:hover{color:#29B765;}
+a:focus{color:#29B765;}
+a:active{color:#29B765;}
 html .text-dark{color:#212529!important;}
 html .bg-color-light-scale-1{background-color:#f7f7f7!important;}
 
@@ -260,7 +260,7 @@ p{color:#777;line-height:26px;margin:0 0 20px;}
 /*! CSS Used from: http://that-quick.com/vendor/rs-plugin/css/layers.css */
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 /*! CSS Used from: http://that-quick.com/css/skins/default.css */
-html .text-color-dark{color:#212529!important;}
+html .text-color-dark{color:#27AE60!important;}
 html .bg-dark{background-color:#212529!important;}
 .thumb-info .thumb-info-action-icon{background-color:#fbb62f;}
 /*! CSS Used keyframes */
