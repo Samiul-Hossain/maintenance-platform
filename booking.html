@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Page</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/cleaningservices.css">
+  <link rel="stylesheet" type="text/css" href="booking.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" type = "text/css">
+  <link 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+  rel="stylesheet"  type='text/css'>
+
+</head>
+<body>
+  <header>
+    <!-- header with logo-->
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-mp.png" alt="Omnifood logo" class = "logo">
+                    <ul class = "main-nav">
+                        <li><a href="#" >Services</a></li>
+                        <li><a href="#" >How it works</a></li>
+                        <li><a href="#" >Customer Reviews</a></li>
+                        <li><a href="#" >Sign up</a></li>
+                    </ul>
+                </div>
+                
+            </nav>
+
+            
+            
+            
+        </header>
+<!--links -->
+       <section class="page-header page-header-modern bg-color-light-scale-1 page-header-md ">
+               <div class="container-fluid">
+                  <div class="row align-items-center">
+                     <div class="col">
+                        <div class="row">
+                           <div class="col-md-12 align-self-center p-static order-2 text-center">
+                              <div class="overflow-hidden pb-2">
+                                 <h1 class="text-dark font-weight-bold text-9 appear-animation animated maskUp appear-animation-visible" data-appear-animation="maskUp" data-appear-animation-delay="100" style="animation-delay: 100ms;">
+                                    Booking
+                                 </h1>
+                              </div>
+                           </div>
+                           <div class="col-md-12 align-self-center order-1">
+                              <ul class="breadcrumb d-block text-center appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="300" style="animation-delay: 300ms;">
+                                 <li><a href="index.php">Home</a></li>
+                                 <li class="active">Booking</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+<div class="container">
+          
+
+                     <div class="row justify-content-end">
+                        <div class="col-lg-6">
+                           <div class="slider-contact-form-wrapper bg-primary rounded p-5 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="2000" style="margin-bottom: 70px; animation-delay: 2000ms;">
+                              <div class="row">
+                                 <div class="col text-center">
+                                    <h2 class="font-weight-light text-color-light text-6 mb-2">Request Service</h2>
+                                    <!-- <p class="text-color-light opacity-7 font-weight-light mb-4 px-5">Enter your contact details here to help us serve you better & faster.</p> -->
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col">
+                                    <form id="contactForm" class="contact-form form-style-2" action="/index.php" method="POST">
+                                       <div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess"><strong>Success!</strong> Your message has been sent to us.</div>
+                                       <div class="contact-form-error alert alert-danger d-none mt-4" id="contactError"><strong>Success!</strong> Your Order has been sent to us.<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span></div>
+                                       <input type="hidden" name="status" required="" value="0">
+                                       <input type="hidden" name="ordersource" required="" value="1">
+                                       <div class="form-row">
+                                          <div class="form-group col-lg-6">
+                                             <input type="text" class="form-control" name="name" id="name" placeholder="Your Name..." required="" oninvalid="this.setCustomValidity('Please enter your name')" oninput="setCustomValidity('')">
+                                          </div>
+                                          <div class="form-group col-lg-6">
+                                             <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone..." required="" oninvalid="this.setCustomValidity('Please Enter valid number')" oninput="setCustomValidity('')">
+                                          </div>
+                                       </div>
+<!--                                       <div class="form-row">
+                                          <div class="form-group col-lg-6">
+                                             <label><font color="white"> Enter your email</font></label>
+                                             <input type="email" class="form-control" name="email" id="email" placeholder="Your email...(optional)">
+                                          </div>
+                                          <div class="form-group col-lg-6">
+                                             <label><font color="white"> Pick a date & time:</font></label>
+                                             <input type="text" onfocus="(this.type='datetime-local')" class="form-control" name="datetime" id="date" placeholder="Your date & time...(Optional)"  
+                                                oninput="setCustomValidity('')">
+                                          </div>
+                                       </div>-->
+                                       <div class="form-row">
+                                          <div class="form-group col mb-4">
+                                             <select name="service" class="form-control" style="line-height: 1px;" required="" oninvalid="this.setCustomValidity('Please Select Service')" oninput="setCustomValidity('')">
+                                                <option>Select a Service</option>
+                                                <optgroup label="Home Appliance">
+                                                   <option value="AC Servicing">AC Servicing</option>
+                                                   <option value="Oven Servicing">Oven Servicing</option>
+                                                   <option value="Tv Servicing">Tv Servicing</option>
+                                                   <option value="Washing Machine Servicing">Washing Machine Servicing</option>
+                                                   <option value="Fridge Servicing">Fridge Servicing</option>
+                                                </optgroup>
+                                                <optgroup label="Cleaning Services">
+                                                   <option value="Toilet cleaning">Toilet cleaning</option>
+                                                   <option value="Carpet cleaning">Carpet cleaning</option>
+                                                   <option value="Sofa cleaning">Sofa cleaning</option>
+                                                   <option value="Kitchen cleaning">Kitchen cleaning</option>
+                                                   <option value="Deep cleaning">Deep cleaning</option>
+                                                   <option value="House cleaning">House cleaning</option>
+                                                   <option value="Office Cleaning">Office cleaning</option>
+                                                   <option value="Floor Cleaning">Floor cleaning</option>
+                                                   <option value="Glass Cleaning">Glass cleaning</option>
+                                                   <option value="Glass Cleaning">Glass Tank cleaning</option>
+                                                   <option value="Move-In/Out Cleaning">Move-In/Out cleaning</option>
+                                                </optgroup>
+                                                <optgroup label="Pest control">
+                                                   <option value="Rat ">Rat</option>
+                                                   <option value="Cockroach ">Cockroach</option>
+                                                   <option value="Termite ">Termite</option>
+                                                   <option value="Bed bugs"> Bed bugs</option>
+                                                </optgroup>
+                                                <optgroup label="Painting">
+                                                   <option value="Interior ">Interior</option>
+                                                   <option value="Exterior ">Exterior</option>
+                                                </optgroup>
+                                                
+                                                
+                                                <optgroup label="Others">
+                                                   <option value="Moving">Moving</option>
+                                                   <option value="Carpentry">Carpentry</option>
+                                                   <option value="Interior Solution">Interior Solution</option>
+                                                   <option value="Plumbing ">Plumbing</option>
+                                                   <option value="Electrical ">Electrical</option>
+                                                </optgroup>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="form-row">
+                                          <div class="form-group col mb-4">
+                                             <textarea class="form-control" name="address" id="message" placeholder="Your Address..." required="" oninvalid="this.setCustomValidity('Please Enter Address')" oninput="setCustomValidity('')"></textarea>
+                                          </div>
+                                       </div>
+                                       <div class="form-row">
+                                          <div class="form-group col text-center">
+                                             <input type="submit" value="BOOK NOW" name="bookBtn" class="btn btn-dark px-4 py-3 btn-block" data-loading-text="Loading...">
+                                          </div>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+        
+        
+        
+
+            
+
+</body>
+</html>
