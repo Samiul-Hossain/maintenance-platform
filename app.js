@@ -24,8 +24,6 @@ const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
 
-
-
 // Passport Config
 require('./config/passport')(passport);
 
@@ -34,15 +32,9 @@ const db = require('./config/keys').mongoURI;
 
 // Connect to MongoDB
 mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true ,
-    useUnifiedTopology: true}
-  )
+  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
   .catch(err => console.log(err));
-
-
 
 // EJS
 app.use(expressLayouts);
@@ -77,14 +69,15 @@ app.use(function(req, res, next) {
 
 // Routes
 app.use('/', require('./routes/index.js'));
+
 app.use('/users', require('./routes/users.js'));
+
 app.get('/register', function(req, res) {
-    res.render('register');
+  res.render('register');
 });
 app.get('/login', function(req, res) {
-    res.render('login');
+  res.render('login');
 });
-
 
 const port = 3000;
 app.listen(port, () => {
