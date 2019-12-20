@@ -88,7 +88,7 @@ app.post('/dashboard', (req, res) => {
   const { name, phone, service, address } = req.body;
   const newOrder = new Orders({ name, phone, service, address });
   newOrder.save();
-  res.end();
+  res.redirect('../index.html');
 });
 
 const port = 3000;
