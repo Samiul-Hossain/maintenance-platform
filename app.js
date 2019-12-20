@@ -26,6 +26,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const flash = require('connect-flash');
 const session = require('express-session');
+const Orders = require('./models/Orders');
 
 // Passport Config
 require('./config/passport')(passport);
@@ -78,11 +79,15 @@ app.use('/users', require('./routes/users.js'));
 app.get('/register', function(req, res) {
   res.render('register');
 });
+
 app.get('/login', function(req, res) {
   res.render('login');
 });
+
 app.post('/dashboard', (req, res) => {
-  console.log(`tryna survive ${req.body.name}`);
+  const { name, phone, service, address } = req.body;
+  const newOrder = new Orders({ name, phone, service, address });
+  newOrder.save();
   res.end();
 });
 

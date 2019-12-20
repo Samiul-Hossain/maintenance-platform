@@ -1,4 +1,5 @@
 const express = require('express');
+
 const router = express.Router();
 const bcrypt = require('bcryptjs');
 const passport = require('passport');
@@ -10,7 +11,9 @@ const { forwardAuthenticated } = require('../config/auth');
 router.get('/login', forwardAuthenticated, (req, res) => res.render('login'));
 
 // Register Page
-router.get('/register', forwardAuthenticated, (req, res) => res.render('register'));
+router.get('/register', forwardAuthenticated, (req, res) =>
+  res.render('register')
+);
 
 // Register
 router.post('/register', (req, res) => {
@@ -21,7 +24,7 @@ router.post('/register', (req, res) => {
     errors.push({ msg: 'Please enter all fields' });
   }
 
-  if (password != password2) {
+  if (password !== password2) {
     errors.push({ msg: 'Passwords do not match' });
   }
 
