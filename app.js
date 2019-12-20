@@ -2,7 +2,10 @@ const express = require('express');
 //const fs = require('fs');
 const app = express();
 
+const bodyParser = require('body-parser');
 //1-MIDDLEWARES
+
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static(__dirname));
 app.get('/electrical', (req, res) => {
@@ -77,6 +80,10 @@ app.get('/register', function(req, res) {
 });
 app.get('/login', function(req, res) {
   res.render('login');
+});
+app.post('/dashboard', (req, res) => {
+  console.log(`tryna survive ${req.body.name}`);
+  res.end();
 });
 
 const port = 3000;
